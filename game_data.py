@@ -21,13 +21,13 @@ class NodeType(enum.Enum):
 class Node:
     node_name: NodeType
     node_cost: int
-    gold_value: int = None
-    arcane_value: int = None
+    gold_value: int = 0
+    arcane_value: int = 0
     node_down_left: Optional['Node'] = None
     node_down_right: Optional['Node'] = None
 
 
-def create_node(node_name, node_cost, gold_value=None, arcane_value=None):
+def create_node(node_name, node_cost, gold_value=0, arcane_value=0):
     return Node(node_name, node_cost, gold_value=gold_value, arcane_value=arcane_value)
 
 
@@ -108,4 +108,4 @@ for i in range(len(rows) - 1):
     create_link(rows[i], "down_right", rows[i + 1])
     create_link(rows[i], "down_left", rows[i + 1])
 
-ROWS = rows
+ROWS = row0_nodes
