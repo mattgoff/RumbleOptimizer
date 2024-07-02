@@ -108,4 +108,5 @@ for i in range(len(rows) - 1):
     create_link(rows[i], "down_right", rows[i + 1])
     create_link(rows[i], "down_left", rows[i + 1])
 
-ROWS = row0_nodes
+ALL_ROWS = rows
+TOP_ROWS = row0_nodes

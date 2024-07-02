@@ -1,4 +1,4 @@
-from game_data import ROWS
+from game_data import ALL_ROWS, TOP_ROWS
 
 
 print("here")
